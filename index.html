@@ -1,53 +1,57 @@
-<html>
-<title> MY FIRST RESUME</title>
-<h1> resume </h1>
-<img src= "WhatsApp Image 2024-12-04 at 13.09.33_9d5fb433.jpg" width =600 height=500>
-<h1> Raja </h1>
-<h1> 22401001N180 </h1>
-<h1> BTECH CSE 1C</h1>
-<h1> SESSION 2024-28 </h1>
-<p>I am an enthusiastic, self-motivated, reliable, responsible and hard working person<br>. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.
-<div>
-    <table border="5px">
-      <caption>
-        game high sores by players
-      </caption>
-      <tr>
-        <th>s. no</th>
-        <th>player name</th>
-        <th>game name</th>
-        <th>score</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>raja</td>
-        <td>jhaadu</td>
-        <td rowspan="3">15 kills</td> 
-      </tr>
-      <td>2</td>
-        <td>hariom</td>
-        <td>freefire</td>
-      </tr>
-    </table>
-  </div>
-
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Webpage</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Event Invitation</title>
+  <link rel="stylesheet" href="Event Invitation Page.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Webpage!</h1>
-  </header>
-  <main>
-    <p>Hello, world! This is my first webpage built with HTML, CSS, and JavaScript.</p>
-    <button onclick="showMessage()">Click Me!</button>
-  </main>
-  <script src="script.js"></script>
+  <!-- Event Details Section -->
+  <section class="event-details">
+    <h1>Welcome to Our Special Event</h1>
+    <p>Date: December 04, 2024</p>
+    <p>Time: 2:00 PM</p>
+    <p>Venue: CENTRAL LAWN, MANAV RACHNA UNIVERSITY, FARIDABAD</p>
+    <p>Join us for an unforgettable evening of celebration and joy.</p>
+  </section>
+
+  <!-- RSVP Form Section -->
+  <section class="rsvp">
+    <h2>RSVP</h2>
+    <form id="rsvp-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <select name="attendance" required>
+        <option value="" disabled selected>Will you attend?</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <input type="number" placeholder="Number of Guests You Brings" min="0">
+      <textarea placeholder="Special Requests"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Location Map Section -->
+  <section class="location">
+    <h2>Location</h2>
+    <div id="map"></div>
+  </section>
+
+  <!-- Gallery of Past Events Section -->
+  <section class="gallery">
+    <h2>Gallery of Past Events</h2>
+    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.37_b64ecb66.jpg" alt="Event 1"></div>
+    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.38_d3718ebf.jpg" alt="Event 2"></div>
+    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.33_9d5fb433.jpg" alt="Event 3"></div>
+    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.36_64d76de0.jpg" alt="Event 4"></div>
+    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.43_28157adb.jpg" alt="Event 5"></div>
+    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.31_95e0e1c2.jpg" alt="Event 6"></div>
+    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.35_53aef955.jpg" alt="Event 7"></div>
+  </section>
+
+  <script src="Event Invitation Page.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
 </html>
