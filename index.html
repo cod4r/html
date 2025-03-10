@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Invitation</title>
-  <link rel="stylesheet" href="Event Invitation Page.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Event Invitation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Event Details Section -->
-  <section class="event-details">
-    <h1>Welcome to Our Special Event</h1>
-    <p>Date: December 04, 2024</p>
-    <p>Time: 2:00 PM</p>
-    <p>Venue: CENTRAL LAWN, MANAV RACHNA UNIVERSITY, FARIDABAD</p>
-    <p>Join us for an unforgettable evening of celebration and joy.</p>
-  </section>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">MANAV RACHNA UNIVERSITY</h1>
+            <p class="date">14th March, 2025</p>
+        </header>
 
-  <!-- RSVP Form Section -->
-  <section class="rsvp">
-    <h2>RSVP</h2>
-    <form id="rsvp-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <select name="attendance" required>
-        <option value="" disabled selected>Will you attend?</option>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select>
-      <input type="number" placeholder="Number of Guests You Brings" min="0">
-      <textarea placeholder="Special Requests"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+        <section class="event-details">
+            <div class="card">
+                <h2>You're Invited</h2>
+                <p class="description">Join us for an unforgettable evening of elegance and celebration</p>
+                <div class="details">
+                    <p><i class="fas fa-clock"></i> 7:00 PM - 11:00 PM</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Crown Plaza Hotel</p>
+                    <p><i class="fas fa-location-dot"></i> Okhla Phase 1, New Delhi</p>
+                </div>
+            </div>
+        </section>
 
-  <!-- Location Map Section -->
-  <section class="location">
-    <h2>Location</h2>
-    <div id="map"></div>
-  </section>
+        <section class="images">
+            <h2>Event Highlights</h2>
+            <div class="image-gallery">
+                <img src="WhatsApp Image 2024-12-04 at 13.09.43_28157adb.jpg" alt="Event Image 1">
+                <img src="WhatsApp Image 2024-12-04 at 13.09.33_9d5fb433.jpg" alt="Event Image 2">
+                <img src="WhatsApp Image 2024-12-04 at 13.09.31_95e0e1c2.jpg" alt="Event Image 3">
+                <img src="WhatsApp Image 2024-12-04 at 13.09.35_53aef955.jpg" alt="Event Image 4">
+                <img src="WhatsApp Image 2024-12-04 at 13.09.36_64d76de0.jpg" alt="Event Image 5">
+                <img src="WhatsApp Image 2024-12-04 at 13.09.38_d3718ebf.jpg" alt="Event Image 6">
+                <img src="WhatsApp Image 2024-12-04 at 13.09.40_a0f65321.jpg" alt="Event Image 7">
+                <img src="WhatsApp Image 2024-12-04 at 13.09.38_d3718ebf.jpg" alt="Event Image 8">
+            </div>
+        </section>
 
-  <!-- Gallery of Past Events Section -->
-  <section class="gallery">
-    <h2>Gallery of Past Events</h2>
-    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.37_b64ecb66.jpg" alt="Event 1"></div>
-    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.38_d3718ebf.jpg" alt="Event 2"></div>
-    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.33_9d5fb433.jpg" alt="Event 3"></div>
-    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.36_64d76de0.jpg" alt="Event 4"></div>
-    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.43_28157adb.jpg" alt="Event 5"></div>
-    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.31_95e0e1c2.jpg" alt="Event 6"></div>
-    <div class="gallery-item"><img src="WhatsApp Image 2024-12-04 at 13.09.35_53aef955.jpg" alt="Event 7"></div>
-  </section>
-
-  <script src="Event Invitation Page.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+        <section class="rsvp">
+            <button class="rsvp-btn">RSVP Now</button>
+        </section>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script>
 </body>
 </html>
